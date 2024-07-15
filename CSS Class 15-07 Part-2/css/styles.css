@@ -1,0 +1,23 @@
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+   background-color: lightblue;
+   width: 100%;
+   height: 800px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   /* Horizontal or main-axis */
+   justify-content: flex-start;
+   /* Vertical or cross-axis */
+   align-items: center;
+}
+
+.flex-item {
+   height: 100px;
+   width: 200px;
+   background-color: coral;
+   border: 1px solid black;
+}

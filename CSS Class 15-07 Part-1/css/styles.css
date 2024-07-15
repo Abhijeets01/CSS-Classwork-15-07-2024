@@ -1,0 +1,64 @@
+* {
+   /* Wildcard Character */
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+   width: 200px;
+   height: 200px;
+   background: lightblue;
+   border: 1px solid black;
+   margin: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.box-1 {
+   position: static;
+   left: 30px;
+   /* Not gonna work here  */
+}
+
+.box-2 {
+   position: relative;
+   left: 30px;
+}
+
+.box-3 {
+   position: fixed;
+   top: 0;
+   right: 0;
+}
+
+.box-4 {
+   position: sticky;
+   /* Relative and Fixed */
+   top: 200px;
+   left: 200px;
+   z-index: 2;
+}
+
+.box-5 {
+   position: relative;
+   width: 600px;
+   height: 600px;
+   background-color: coral;
+   z-index: 1;
+}
+
+.box-6 {
+   position: absolute;
+   bottom: 50px;
+   right: 20px;
+}
+
+/* z-index Property */
+/* Controls the stacking order of positioned elements */
+/* z-index:0 */
+/* range - 0-100 */
